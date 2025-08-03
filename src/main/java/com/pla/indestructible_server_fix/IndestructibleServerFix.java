@@ -1,4 +1,4 @@
-package com.pla.commons_compress_library;
+package com.pla.indestructible_server_fix;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
@@ -13,13 +13,13 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
-@Mod(CommonsCompressLibrary.MOD_ID)
-public class CommonsCompressLibrary
+@Mod(IndestructibleServerFix.MOD_ID)
+public class IndestructibleServerFix
 {
-    public static final String MOD_ID = "commons_compress_library";
+    public static final String MOD_ID = "indestructible_server_fix";
     private static final Logger LOGGER = LogUtils.getLogger();
 
-    public CommonsCompressLibrary() {
+    public IndestructibleServerFix() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
